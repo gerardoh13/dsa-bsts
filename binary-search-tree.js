@@ -145,33 +145,7 @@ class BinarySearchTree {
    * Returns the removed node. */
 
   remove(val) {
-    // if (!this.root || this.root.val === val) return;
-    // let curr = this.root;
-    // let parent;
-    // while (val !== curr.val) {
-    //   parent = curr;
-    //   if (val < curr.val) {
-    //     if (!curr.left) {
-    //       return;
-    //     } else curr = curr.left;
-    //   } else if (val > curr.val) {
-    //     if (!curr.right) {
-    //       return;
-    //     } else curr = curr.right;
-    //   }
-    // }
-    // if (!curr.left && !curr.right) {
-    //   if (parent.left === curr) parent.left = null;
-    //   else parent.right = null;
-    // }
-    let arr = [];
-    function recursion(node) {
-      if (node.left) recursion(node.left);
-      if (node.right) recursion(node.right);
-      arr.push(node.val);
-    }
-    recursion(this.root);
-    return arr;
+
   }
 
   /** Further Study!
